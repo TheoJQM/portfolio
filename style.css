@@ -1,0 +1,23 @@
+.bg-clair {
+    background: rgb(204,223,249);
+    background: linear-gradient(130deg, rgba(204,223,249,1) 0%, rgba(255,255,255,1) 33%, rgba(251,243,228,1) 66%, rgba(204,223,249,1) 100%);
+}
+
+
+
+#licenceCard {
+    background-image: linear-gradient(to right bottom, #346aaf, #346aaf, #346aaf, #346aaf, #346aaf, #2a76ba, #1b83c5, #008fce, #00abdf, #00c6ea, #1ee1ef, #5ffbf1);
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+.skill {
+    transition: transform .2s;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

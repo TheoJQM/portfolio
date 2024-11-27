@@ -1,61 +1,140 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theo Jacquemin</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo Jacquemin</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-sm navbar-light shadow">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarText"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbar">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio </a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link " href="/index.html">Accueil<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/aPropos.html">A propos</a>
-        </li>
-      </ul>
+<body class="d-flex flex-column min-vh-100 bg-clair">
+    <nav class="blur navbar navbar-expand-sm sticky-top navbar-light shadow">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbar">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                  <a class="nav-link active" href="/index.html">Accueil<span class="sr-only">(current)</span></a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row justify-content-around mb-4 rounded shadow">
+            <div class=".col p-3 mh-75 mx-2 ">
+                <img src="./images/Theo_JACQUEMIN.png " class="rounded" style="width: 300px">
+            </div>
+            <div class="col p-3 h-75 w-auto">
+                <h3 class="text-center p-1 w-100 shadow rounded fw-bold bg-title-clair">Théo Jacquemin</h3>
+                <div class="card-body border-0 text-center text-bold fs-2 p-1 bg-dark-subtle mx-2">
+                    Je suis actuellement étudiant en Master à l'ETNA, une école spécialisée dans les métiers du
+                    numérique, où je me perfectionne dans le développement web et mobile. Passionné par la création
+                    d'applications intuitives et fonctionnelles, je me spécialise dans la conception de solutions qui
+                    allient performance, accessibilité et expérience utilisateur.
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-  <div class="mx-3 fixed-bottom">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center my-2 border-top">
-      <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
+    <div class="container justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row p-3 h-75 w-auto justify-content-around mb-4 rounded shadow">
+            <h2 class="text-center p-1 w-100 shadow rounded fw-bold bg-title-clair">Compétences</h2>
+            <div class="row p-3 h-75 w-auto justify-content-around">
+                <div class="col p-3 h-75 w-auto" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card border-danger rounded mb-3 w-100 bg-danger text-light">
+                        <h2 class="text-bold p-1 text-center">Langages</h2>
+                    </div>
+                    <ul class="d-flex flex-wrap justify-content-between" style="padding-left: 0px;">
+                        <h4 class="px-1"><span class="badge bg-light border border-danger skill">Kotlin</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-danger skill">HTML/CSS</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-danger skill">SQL</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-danger skill">Typescript</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-danger skill">Python</span></h4>
+                    </ul>
+                </div>
+                <div class="col p-3 h-75 w-auto" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card border-info rounded mb-3 w-100 bg-info text-light">
+                        <h2 class="text-bold p-1 text-center">Outils / Conception</h2>
+                    </div>
+                    <ul class="d-flex flex-wrap justify-content-between " style="padding-left: 0px;">
+                        <h4 class="px-1"><span class="badge bg-light border border-info skill">Maquettage</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-info skill">Diagramme UML</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-info skill">Git</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-info skill">Figma</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-info skill">VS Code</span></h4>
+                    </ul>
+                </div>
+                <div class="col p-3 h-75 w-auto" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="card border-success rounded mb-3 w-100 bg-success text-light">
+                        <h2 class="text-bold p-1 text-center">Soft skills</h2>
+                    </div>
+                    <ul class="d-flex flex-wrap justify-content-between " style="padding-left: 0px;">
+                        <h4 class="px-1"><span class="badge bg-light border border-success skill">Créatif</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-success skill">Autonome</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-success skill">Organisé</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-success skill">Esprit d'équipe</span></h4>
+                        <h4 class="px-1"><span class="badge bg-light border border-success skill">Curieux</span></h4>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container justify-content-center px-5 mt-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row p-3 h-75 w-auto justify-content-around mb-4 rounded shadow">
+            <h2 class="text-center p-1 mb-3 w-100 shadow rounded fw-bold">Formation</h2>
+            <div class="card border-0 skill m-3" style="width: 18rem;" id="licenceCard">
+                <h4 class="card-title text-center py-2 shadow">Licence informatique</h5>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary">La Rochelle Université</h6>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <h6 class="text-center m-0">2020-2023</h6>
+                        <a href="https://www.univ-larochelle.fr" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/La_Rochelle_Université.png" style="height: 48px;"
+                                alt="logo de La Rochelle Université">
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-3 mt-auto">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center my-2 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
 
-      <a href="/"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
 
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Accueil</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Portfolio</a></li>
-        <li class="nav-item"><a href="/aPropos.html" class="nav-link px-2 text-muted">A Propos</a></li>
-      </ul>
-    </footer>
-  </div>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Accueil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Portfolio</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
